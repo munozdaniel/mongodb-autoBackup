@@ -5,16 +5,16 @@ const path = require('path');
 
 // Concatenate root directory path with our backup folder.
 const backupDirPath = path.join(__dirname, 'database-backup');
-
+console.log('da', backupDirPath);
 const dbOptions = {
-  user: '<databaseUsername>',
-  pass: '<databasePassword>',
+  user: 'adminEscuela',
+  pass: '\'system2021$cet30\'',
   host: 'localhost',
   port: 27017,
-  database: '<databaseName>',
+  database: 'sega30',
   autoBackup: true,
   removeOldBackup: true,
-  keepLastDaysBackup: 2,
+  keepLastDaysBackup: 7,
   autoBackupPath: backupDirPath
 };
 
@@ -43,6 +43,7 @@ exports.empty = mixedVar => {
 
 // Auto backup function
 exports.dbAutoBackUp = () => {
+console.log('dbAutoBackUp');
   // check for auto backup is enabled or disabled
   if (dbOptions.autoBackup == true) {
     let date = new Date();
@@ -58,7 +59,7 @@ exports.dbAutoBackUp = () => {
       currentDate.getDate();
 
     // New backup path for current backup process
-    let newBackupPath = dbOptions.autoBackupPath + '-mongodump-' + newBackupDir;
+    let newBackupPath = dbOptions.autoBackupPath + '/mongodump-' + newBackupDir;
     // check for remove old backup after keeping # of days given in configuration
     if (dbOptions.removeOldBackup == true) {
       beforeDate = _.clone(currentDate);
@@ -76,8 +77,9 @@ exports.dbAutoBackUp = () => {
 
     // Command for mongodb dump process
     let cmd =
+//'mongodump '+
       'mongodump --host ' +
-      dbOptions.host +
+     dbOptions.host +
       ' --port ' +
       dbOptions.port +
       ' --db ' +
@@ -88,7 +90,7 @@ exports.dbAutoBackUp = () => {
       dbOptions.pass +
       ' --out ' +
       newBackupPath;
-
+console.log('cmd0', cmd);
     exec(cmd, (error, stdout, stderr) => {
       if (this.empty(error)) {
         // check for remove old backup after keeping # of days given in configuration.

@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"},{"v":{"$numberInt":"2"},"unique":true,"key":{"calificacionNro":{"$numberInt":"1"}},"name":"calificacionNro_1","background":true}],"uuid":"d78542fec2934a70974144f8a888ccf7","collectionName":"calificaciones"}

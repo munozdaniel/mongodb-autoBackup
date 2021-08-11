@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"},{"v":{"$numberInt":"2"},"unique":true,"key":{"planillaTaller":{"$numberInt":"1"},"alumno":{"$numberInt":"1"},"fecha":{"$numberInt":"1"}},"name":"planillaTaller_1_alumno_1_fecha_1","background":true}],"uuid":"504874d1cd474ad0b88e4df5be688d0b","collectionName":"asistencias"}

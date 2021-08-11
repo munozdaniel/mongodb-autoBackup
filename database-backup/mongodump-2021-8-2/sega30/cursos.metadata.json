@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"},{"v":{"$numberInt":"2"},"unique":true,"key":{"comision":{"$numberInt":"1"},"curso":{"$numberInt":"1"},"division":{"$numberInt":"1"}},"name":"comision_1_curso_1_division_1","background":true}],"uuid":"ac5ef622a1c445f2ad1f2145a434d14b","collectionName":"cursos"}

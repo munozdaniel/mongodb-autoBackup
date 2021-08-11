@@ -5,3 +5,7 @@ With a couple of dependencies and some JavaScript, you can set up automatic back
 This tutorial describes the process of setting up automatic backups for MongoDB using Node.js. Before we dive into this two-step process, you need a couple of prerequisites.
 fs and lodash npm modules should be installed.
 Make sure that your MongoDB is protected with a username and password. (Recommended)
+
+npm run start
+
+pm2 start index.js

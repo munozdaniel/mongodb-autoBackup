@@ -4,6 +4,7 @@
   "description": "Getting Auto Backup Set for MongoDB with Node.js",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,6 +25,7 @@
   },
   "homepage": "https://github.com/theouerd/mongodb-autoBackup#readme",
   "dependencies": {
+    "cron": "^1.8.2",
     "fs": "0.0.1-security",
     "lodash": "^4.17.19"
   }

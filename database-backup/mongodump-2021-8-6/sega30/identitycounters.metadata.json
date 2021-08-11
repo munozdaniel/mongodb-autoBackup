@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"},{"v":{"$numberInt":"2"},"unique":true,"key":{"field":{"$numberInt":"1"},"groupingField":{"$numberInt":"1"},"model":{"$numberInt":"1"}},"name":"field_1_groupingField_1_model_1","background":true}],"uuid":"5dd14710288f45d9bf81321d1d7ff60e","collectionName":"identitycounters"}

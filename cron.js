@@ -4,7 +4,7 @@ const Cron = require('./backup.js');
 // AutoBackUp every week (at 00:00 on Sunday)
 
 new CronJob(
-  '0 0 *  * 0',
+  '0 20 * * *',
   function() {
     Cron.dbAutoBackUp();
   },
